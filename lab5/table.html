@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100 p-10">
+
+<div class="max-w-6xl mx-auto bg-white rounded-lg shadow">
+
+    <!-- top panel -->
+
+    <div class="flex justify-between items-center p-4 border-b text-gray-600">
+
+        <div>
+            0 selected
+        </div>
+
+        <div class="flex gap-6">
+
+            <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-sort"></i>
+                <span>Sort by</span>
+            </div>
+
+            <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <span>Actions</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- table -->
+
+    <div class="overflow-x-auto">
+
+        <table class="w-full text-left">
+
+            <thead class="text-gray-500 border-b">
+
+            <tr>
+
+                <th class="p-4">
+                    <input type="checkbox">
+                </th>
+
+                <th class="p-4">Name</th>
+
+                <th class="p-4">Properties</th>
+
+                <th class="p-4">Created by</th>
+
+                <th class="p-4">Last updated</th>
+
+                <th class="p-4"></th>
+
+            </tr>
+
+            </thead>
+
+            <tbody class="text-gray-700">
+
+            <tr class="border-b hover:bg-gray-100 transition">
+
+                <td class="p-4">
+                    <input type="checkbox">
+                </td>
+
+                <td class="p-4 font-medium">denver</td>
+
+                <td class="p-4">24</td>
+
+                <td class="p-4">Me</td>
+
+                <td class="p-4">02/27/2026 at 1:41PM</td>
+
+                <td class="p-4 text-right">
+                    <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                </td>
+
+            </tr>
+
+            <tr class="border-b hover:bg-gray-100 transition">
+
+                <td class="p-4">
+                    <input type="checkbox">
+                </td>
+
+                <td class="p-4 font-medium">test save</td>
+
+                <td class="p-4">10</td>
+
+                <td class="p-4">Me</td>
+
+                <td class="p-4">02/10/2026 at 5:52PM</td>
+
+                <td class="p-4 text-right">
+                    <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                </td>
+
+            </tr>
+
+            <tr class="border-b hover:bg-gray-100 transition">
+
+                <td class="p-4">
+                    <input type="checkbox">
+                </td>
+
+                <td class="p-4 font-medium">gggg</td>
+
+                <td class="p-4">10</td>
+
+                <td class="p-4">Me</td>
+
+                <td class="p-4">02/04/2026 at 5:49PM</td>
+
+                <td class="p-4 text-right">
+                    <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                </td>
+
+            </tr>
+
+            <tr class="border-b hover:bg-gray-100 transition">
+
+                <td class="p-4">
+                    <input type="checkbox">
+                </td>
+
+                <td class="p-4 font-medium">test full export</td>
+
+                <td class="p-4">4059</td>
+
+                <td class="p-4">Me</td>
+
+                <td class="p-4">02/02/2026 at 11:19AM</td>
+
+                <td class="p-4 text-right">
+                    <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                </td>
+
+            </tr>
+
+            <tr class="hover:bg-gray-100 transition">
+
+                <td class="p-4">
+                    <input type="checkbox">
+                </td>
+
+                <td class="p-4 font-medium">denver 1</td>
+
+                <td class="p-4">14</td>
+
+                <td class="p-4">Me</td>
+
+                <td class="p-4">01/23/2026 at 9:20AM</td>
+
+                <td class="p-4 text-right">
+                    <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+                </td>
+
+            </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="flex justify-between items-center p-4 border-t text-gray-600">
+
+        <div class="flex items-center gap-2">
+            <span>Show</span>
+
+            <select class="border rounded px-2 py-1">
+                <option>5</option>
+            </select>
+
+            <span>of 5 results</span>
+        </div>
+
+        <div class="flex items-center justify-center w-10 h-10 border rounded-full text-green-600 border-green-500">
+            1
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
